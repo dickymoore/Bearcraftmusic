@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.white-bg {
+  background-color: white;
+}
