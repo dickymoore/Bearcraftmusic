@@ -2,19 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  height: auto; /* Ensure the header height adjusts according to content */
 }
 
 .logo {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  height: 10%;
+}
+
+.logo-image {
+  align-items: center;
+  display: flex;
+  height: 20%; 
 }
 
 .menu {
   list-style: none;
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a {
@@ -23,14 +34,37 @@
   font-size: 20px;
 }
 
-.menu a:hover {
-  text-decoration: underline;
-}
-
 .black-bg {
   background-color: black;
 }
 
 .white-bg {
   background-color: white;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+.header a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  height: 100%;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

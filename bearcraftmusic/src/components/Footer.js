@@ -1,5 +1,5 @@
 import React from 'react';
-// import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social media icons
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social media icons
 import './Footer.css';
 
 const Footer = () => {
@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="footer-section">
         <h3>Links</h3>
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/music">Music</a></li>
-          <li><a href="/videos">Videos</a></li>
+          <li><a href="/About">About</a></li>
+          <li><a href="/Shop">Shop</a></li>
+          <li><a href="/Video">Video</a></li>
         </ul>
       </div>
       <div className="footer-section">
