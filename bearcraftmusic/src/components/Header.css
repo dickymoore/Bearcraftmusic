@@ -3,11 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .logo {
-  color: white;
   text-decoration: none;
   font-size: 1.5em;
   display: flex;
@@ -28,22 +27,30 @@
 }
 
 .menu a {
-  color: white;
   text-decoration: none;
   font-size: 20px;
-  margin-left: 10px; /* Reduced margin-left from 20px to 10px */
+  margin-left: 10px;
 }
 
 .black-bg {
   background-color: black;
+  color: white;
 }
 
 .white-bg {
   background-color: white;
+  color: #1F2770;
+}
+
+.black-bg .menu a {
+  color: white;
+}
+
+.white-bg .menu a {
+  color: black;
 }
 
 .header a {
-  color: #fff;
   text-decoration: none;
   padding: 3px 5px;
 }
@@ -62,10 +69,24 @@
 }
 
 .header .social-icons a {
-  color: white; /* Icon color white */
   font-size: 1.2em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.black-bg .social-icons a {
+  color: white;
+}
+
+.white-bg .social-icons a {
+  color: #1F2770;
+}
+
+.white-bg .menu a:hover {
+  color: #555;
+}
+
+.black-bg .menu a:hover {
+  color: #ccc;
+}
