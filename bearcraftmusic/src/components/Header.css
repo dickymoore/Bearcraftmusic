@@ -53,7 +53,7 @@
   border-radius: 5px;
 }
 
-.social-icons {
+.header .social-icons {
   display: flex;
   align-items: center;
   gap: 3px;
@@ -61,11 +61,11 @@
   height: 100%;
 }
 
-.social-icons a {
-  color: white;
+.header .social-icons a {
+  color: white; /* Icon color white */
   font-size: 1.2em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
- 
+
