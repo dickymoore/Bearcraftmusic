@@ -12,7 +12,7 @@ function Header() {
   }, [location]);
 
   return (
-    <header className={`header ${isHomePage ? 'black-bg' : 'white-bg'}`}>
+    <header className={`header ${isHomePage ? 'dark-bg' : 'light-bg'}`}>
       <Link to="/" className="logo">
         <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" />
       </Link>

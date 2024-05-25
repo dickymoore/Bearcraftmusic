@@ -1,0 +1,57 @@
+.audio-page {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    color: #000; /* Set the text color to black */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .image-section {
+    flex: 2;
+  }
+  
+  .album-cover {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-section {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .text-section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .text-section blockquote {
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    padding-left: 15px;
+  }
+  
+  .text-section blockquote p {
+    margin: 0;
+  }
+  

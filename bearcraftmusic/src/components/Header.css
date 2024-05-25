@@ -32,22 +32,22 @@
   margin-left: 10px;
 }
 
-.black-bg {
+.dark-bg {
   background-color: black;
   color: white;
 }
 
-.white-bg {
+.light-bg {
   background-color: white;
   color: #1F2770;
 }
 
-.black-bg .menu a {
-  color: white;
+.dark-bg .menu a {
+  color: #FDF3EF;
 }
 
-.white-bg .menu a {
-  color: black;
+.light-bg .menu a {
+  color: #1F2770;
 }
 
 .header a {
@@ -75,18 +75,18 @@
   justify-content: center;
 }
 
-.black-bg .social-icons a {
+.dark-bg .social-icons a {
   color: white;
 }
 
-.white-bg .social-icons a {
+.light-bg .social-icons a {
   color: #1F2770;
 }
 
-.white-bg .menu a:hover {
-  color: #555;
+.light-bg .menu a:hover {
+  color: #FDF3EF;
 }
 
-.black-bg .menu a:hover {
+.dark-bg .menu a:hover {
   color: #ccc;
 }
