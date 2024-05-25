@@ -23,7 +23,6 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 0px;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +31,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 10px; /* Reduced margin-left from 20px to 10px */
 }
 
 .black-bg {
