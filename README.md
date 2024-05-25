@@ -1,2 +1,2 @@
-# Bearcraftmusic
-Website for Bearcraft Music
+# BearcraftShop
+Website for Bearcraft Shop
