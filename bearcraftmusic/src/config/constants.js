@@ -1,2 +1,2 @@
-export const logoHeightPercentage = 0.75;
-export const font = "'Montserrat', sans-serif";
+export const logoHeightPercentage = 0.8;
+export const googleFont  = 'Poppins';

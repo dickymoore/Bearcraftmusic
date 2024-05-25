@@ -7,34 +7,24 @@ import { logoHeightPercentage } from '../config/constants';
 
 function Header() {
   const location = useLocation();
+  const [headerHeight, setHeaderHeight] = useState(0); // State to store header height
   const [isHomePage, setIsHomePage] = useState(false);
-  
-
 
   useEffect(() => {
     setIsHomePage(location.pathname === '/');
     
-    // Get the .header element
-    var header = document.querySelector('.header');
-    
-    // Get its computed height
-    var headerHeight = window.getComputedStyle(header).height;
-    
-    // Set the max-height of the header to match the height of the .menu
-    header.style.maxHeight = headerHeight;
-  
-    // Calculate 90% of the header height
-    var logoHeight = parseFloat(headerHeight) * logoHeightPercentage;
-  
-    // Set the height of the logo to 90% of the header height
-    var logo = document.querySelector('.logo-image');
-    logo.style.height = logoHeight + 'px';
+    // Dynamically adjust the header height based on the navigation bar height
+    const nav = document.querySelector('nav');
+    const navHeight = nav.clientHeight; // Get the height of the navigation bar
+
+    // Set the height of the header
+    setHeaderHeight(navHeight);
   }, [location]);  
 
   return (
-    <header className={`header ${isHomePage ? 'black-bg' : 'white-bg'}`}>
+    <header className={`header ${isHomePage ? 'black-bg' : 'white-bg'}`} style={{ height: headerHeight }}>
       <Link to="/" className="logo">
-        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" />
+        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" style={{ height: `${headerHeight * logoHeightPercentage}px` }} />
       </Link>
       <nav>
         <ul className="menu">
