@@ -2,20 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
-  height: auto; /* Ensure the header height adjusts according to content */
+  padding: 10px 20px;
+  background-color: black;
 }
 
 .logo {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  display: flex;
+  align-items: center;
 }
 
 .logo-image {
-  align-items: center;
-  display: flex;
-  height: calc(var(--logo-height-percentage) * 1%);
+  height: auto;
+  max-height: 50px;
 }
 
 .menu {
@@ -31,6 +32,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .black-bg {
@@ -55,7 +57,7 @@
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
   padding: 5px;
   height: 100%;
 }
@@ -67,3 +69,4 @@
   align-items: center;
   justify-content: center;
 }
+ 

@@ -1,30 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaSoundcloud, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSpotify } from 'react-icons/fa';
-import '../global.css';
 import './Header.css';
-import { logoHeightPercentage } from '../config/constants';
 
 function Header() {
   const location = useLocation();
-  const [headerHeight, setHeaderHeight] = useState(0); // State to store header height
   const [isHomePage, setIsHomePage] = useState(false);
 
   useEffect(() => {
     setIsHomePage(location.pathname === '/');
-    
-    // Dynamically adjust the header height based on the navigation bar height
-    const nav = document.querySelector('nav');
-    const navHeight = nav.clientHeight; // Get the height of the navigation bar
-
-    // Set the height of the header
-    setHeaderHeight(navHeight);
-  }, [location]);  
+  }, [location]);
 
   return (
-    <header className={`header ${isHomePage ? 'black-bg' : 'white-bg'}`} style={{ height: headerHeight }}>
+    <header className={`header ${isHomePage ? 'black-bg' : 'white-bg'}`}>
       <Link to="/" className="logo">
-        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" style={{ height: `${headerHeight * logoHeightPercentage}px` }} />
+        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" />
       </Link>
       <nav>
         <ul className="menu">
