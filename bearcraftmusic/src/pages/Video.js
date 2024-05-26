@@ -12,19 +12,21 @@ function Video() {
   ];
 
   return (
-    <div className="video-page">
-      <div className="video-grid">
-        {videoLinks.map((link, index) => (
-          <div key={index} className="video-container">
-            <iframe 
-              src={link} 
-              title={`YouTube video player ${index}`} 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
+    <div className="content">
+      <div className="video-page">
+        <div className="video-grid">
+          {videoLinks.map((link, index) => (
+            <div key={index} className="video-container-video">
+              <iframe 
+                src={link} 
+                title={`YouTube video player ${index}`} 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

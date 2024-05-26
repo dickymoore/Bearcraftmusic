@@ -2,11 +2,10 @@ import React from 'react';
 import './Home.css';
 
 function Home() {
-  console.log("Home component rendered");
   return (
     <div className="home">
-      <div className="content">
-        <div className="video-container">
+      <div className="home-content">
+        <div className="video-container-home">
           <iframe 
             src="https://www.youtube.com/embed/AlnioEJE8tg" 
             title="YouTube video player" 

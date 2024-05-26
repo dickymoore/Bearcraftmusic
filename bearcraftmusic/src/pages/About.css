@@ -1,14 +1,40 @@
 .about {
-    padding: 20px;
-    text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.about h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.about img {
+  max-width: 50%; /* Adjust as necessary */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.about p {
-    font-size: 1.2em;
-    line-height: 1.6;
+.text-content {
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-content blockquote {
+  font-style: italic;
+  border-left: 5px solid #ccc;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+.text-content blockquote p {
+  margin: 0;
 }

@@ -25,3 +25,15 @@ a {
 a:hover {
   color: #007bff;
 }
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home .home-content {
+  max-width: none; /* Ensure the content takes full width for the home page */
+  margin: 0;
+  padding: 0;
+}
