@@ -9,7 +9,6 @@ const Home = lazy(() => import('./pages/Home'));
 const Video = lazy(() => import('./pages/Video'));
 const Audio = lazy(() => import('./pages/Audio'));
 const About = lazy(() => import('./pages/About'));
-const Shop = lazy(() => import('./pages/Shop'));
 
 const App = () => {
   useEffect(() => {
@@ -27,7 +26,6 @@ const App = () => {
             <Route path="/Video" element={<Video />} />
             <Route path="/Audio" element={<Audio />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Shop" element={<Shop />} />
           </Routes>
         </Suspense>
         <Footer />

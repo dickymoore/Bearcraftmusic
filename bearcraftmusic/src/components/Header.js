@@ -1,4 +1,6 @@
-import React, { useEffect, useState, Suspense, lazy } from 'react';
+// Header.js
+
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import './Header.css';
@@ -32,7 +34,7 @@ const Header = () => {
           <li><Link to="/Video">Video</Link></li>
           <li><Link to="/Audio">Audio</Link></li>
           <li><Link to="/About">About</Link></li>
-          <li><Link to="/Shop">Shop</Link></li>
+          <li><a href="https://shop.bearcraftmusic.com/" target="_blank" rel="noopener noreferrer">Shop</a></li>
           <div className="social-icons">
             <SocialIcons />
           </div>
@@ -49,7 +51,7 @@ const Header = () => {
             <Link to="/Video" onClick={closeMenu}>Video</Link>
             <Link to="/Audio" onClick={closeMenu}>Audio</Link>
             <Link to="/About" onClick={closeMenu}>About</Link>
-            <Link to="/Shop" onClick={closeMenu}>Shop</Link>
+            <a href="https://shop.bearcraftmusic.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Shop</a>
           </div>
           <div className="bm-social-icons">
             <SocialIcons />
