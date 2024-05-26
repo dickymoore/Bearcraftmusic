@@ -57,7 +57,7 @@ function Header() {
           <Link to="/Audio" onClick={closeMenu}>Audio</Link>
           <Link to="/About" onClick={closeMenu}>About</Link>
           <Link to="/Shop" onClick={closeMenu}>Shop</Link>
-          <div className="social-icons">
+          <div className="bm-social-icons">
             <a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer"><FaSoundcloud /></a>
             <a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
             <a href="https://twitter.com/bearcraftmusic" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>

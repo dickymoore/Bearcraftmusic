@@ -1,5 +1,5 @@
 .bm-menu {
-  background: #373a47;
+  background: white; /* Change background to white */
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   height: 100vh;
@@ -14,6 +14,7 @@
   z-index: 1000;
   transform: translateX(100%); /* Start off-screen to the right */
   transition: transform 0.3s ease-in-out;
+  color: black; /* Set text color to black */
 }
 
 .bm-menu-open {
@@ -35,10 +36,6 @@
   display: block;
 }
 
-.bm-menu {
-  z-index: 1000;
-}
-
 .bm-logo {
   width: 90%; /* Make the container take 90% of the width */
   display: flex;
@@ -48,6 +45,44 @@
 }
 
 .bm-logo-image {
-  max-width: 100%; /* Ensure the logo takes up the full width of the container */
+  max-width: 90%; /* Ensure the logo takes up the full width of the container */
   height: auto;
+}
+
+/* Update item list styles for black text */
+.bm-item-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bm-item-list a {
+  color: black; /* Set text color to black */
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1.5em; /* Adjust font size for better visibility */
+}
+
+.bm-item-list a:hover {
+  color: #a90000; /* Set hover color */
+}
+
+/* New styles for the social icons in the burger menu */
+.bm-social-icons {
+  display: flex;
+  flex-direction: column; /* Arrange icons in a column */
+  align-items: center;
+  margin-top: 20px; /* Add some space above the icons */
+}
+
+.bm-social-icons a {
+  margin-bottom: 10px; /* Space between icons */
+  color: black; /* Set icon color to black */
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.bm-social-icons a:hover {
+  color: #a90000; /* Set hover color */
 }
