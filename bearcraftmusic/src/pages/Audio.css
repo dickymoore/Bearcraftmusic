@@ -8,13 +8,19 @@
 
 .content {
     display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between the two albums */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.album-section {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap; /* Ensure no wrapping */
     justify-content: flex-start; /* Align items to the start */
     align-items: flex-start; /* Align items to the top */
     gap: 20px;
-    max-width: 1200px;
-    width: 100%;
 }
 
 .image-section {
@@ -34,6 +40,14 @@
 .embed-section {
     width: 100%; /* Ensures the embed section takes full width */
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.embed-section iframe {
+    width: 100%; /* Ensures the iframe takes full width of the embed section */
+    height: 600px; /* Set the height to 600px for consistency */
+    border: none; /* Removes any border from the iframe */
 }
 
 .text-section {
@@ -65,4 +79,8 @@
 
 .text-section blockquote p {
     margin: 0;
+}
+
+.album-section.reverse {
+    flex-direction: row-reverse; /* Reverse the direction for the second album */
 }
