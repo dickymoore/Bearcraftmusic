@@ -1,89 +1,53 @@
-/* BurgerMenu.css */
-.bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
-    display: none; /* Initially hide the burger button */
-  }
-  
-  .bm-burger-bars {
-    background: #373a47;
-  }
-  
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-  
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    height: 100vh; /* Ensure the menu fills the screen */
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden; /* Ensure no scrolling */
-    transition: transform 0.3s ease-in-out; /* Slide out quicker */
-    position: fixed; /* Ensure the menu is fixed and covers the screen */
-    top: 0;
-    left: 0;
-  }
-  
-  .bm-morph-shape {
-    fill: #373a47;
-  }
-  
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-    width: 100%; /* Ensure items take full width */
-    text-align: center; /* Center-align items */
-  }
-  
-  .bm-item {
-    display: inline-block;
-    color: #d1d1d1;
-    text-decoration: none;
-    margin-bottom: 10px;
-    transition: color 0.2s;
-  }
-  
-  .bm-item:hover {
-    color: white;
-  }
-  
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  
-  .hamburger-menu {
-    display: none;
-  }
-  
-  .bm-logo {
-    margin-bottom: 20px; /* Add some space below the logo */
-  }
-  
-  .bm-logo-image {
-    max-width: 150px; /* Adjust logo size as needed */
-    height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .bm-burger-button {
-      display: block; /* Show burger button on smaller screens */
-    }
-  }
-  
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(100%); /* Start off-screen to the right */
+  transition: transform 0.3s ease-in-out;
+}
+
+.bm-menu-open {
+  transform: translateX(0); /* Slide into view */
+}
+
+.bm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Just below the menu */
+  display: none;
+}
+
+.bm-overlay-open {
+  display: block;
+}
+
+.bm-menu {
+  z-index: 1000;
+}
+
+.bm-logo {
+  width: 90%; /* Make the container take 90% of the width */
+  display: flex;
+  justify-content: center; /* Center the logo inside the container */
+  margin-bottom: 20px; /* Add some space below the logo */
+  padding: 0 5%;
+}
+
+.bm-logo-image {
+  max-width: 100%; /* Ensure the logo takes up the full width of the container */
+  height: auto;
+}

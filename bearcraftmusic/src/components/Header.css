@@ -46,7 +46,7 @@
 
 .light-bg {
   background-color: white;
-  color: #1F2770;
+  color: #FFF;
 }
 
 .dark-bg .menu a {
@@ -54,7 +54,7 @@
 }
 
 .light-bg .menu a {
-  color: #1F2770;
+  color: #FFF;
 }
 
 .header a {

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaSoundcloud, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSpotify, FaBars } from 'react-icons/fa';
-import { slide as Menu } from 'react-burger-menu';
 import './Header.css';
 import './BurgerMenu.css';
 
@@ -16,6 +15,10 @@ function Header() {
 
   const handleStateChange = (state) => {
     setIsOpen(state.isOpen);
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   const closeMenu = () => {
@@ -42,10 +45,11 @@ function Header() {
             <a href="https://open.spotify.com/artist/63VxrRwKAytSfmlhI7SwN1" target="_blank" rel="noopener noreferrer"><FaSpotify /></a>
           </div>
         </ul>
-        <div className="hamburger-menu">
-          <FaBars onClick={() => setIsOpen(!isOpen)} />
+        <div className="hamburger-menu" onClick={toggleMenu}>
+          <FaBars />
         </div>
-        <Menu right isOpen={isOpen} onStateChange={handleStateChange}>
+        <div className={`bm-overlay ${isOpen ? 'bm-overlay-open' : ''}`} onClick={closeMenu}></div>
+        <div className={`bm-menu ${isOpen ? 'bm-menu-open' : ''}`}>
           <Link to="/" onClick={closeMenu} className="bm-logo">
             <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="bm-logo-image" />
           </Link>
@@ -61,7 +65,7 @@ function Header() {
             <a href="https://www.youtube.com/user/Bearcraftmusic" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
             <a href="https://open.spotify.com/artist/63VxrRwKAytSfmlhI7SwN1" target="_blank" rel="noopener noreferrer"><FaSpotify /></a>
           </div>
-        </Menu>
+        </div>
       </nav>
     </header>
   );
