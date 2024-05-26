@@ -35,7 +35,7 @@ function Header() {
           <li><Link to="/Video">Video</Link></li>
           <li><Link to="/Audio">Audio</Link></li>
           <li><Link to="/About">About</Link></li>
-          <li><Link to="/Shop">Shop</Link></li>
+          <li><Link to="/Shop">Shop</Link></li> {/* Corrected closing tag */}
           <div className="social-icons">
             <a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer"><FaSoundcloud /></a>
             <a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
@@ -45,7 +45,7 @@ function Header() {
             <a href="https://open.spotify.com/artist/63VxrRwKAytSfmlhI7SwN1" target="_blank" rel="noopener noreferrer"><FaSpotify /></a>
           </div>
         </ul>
-        <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className={`hamburger-menu ${isHomePage ? 'hamburger-menu-dark' : 'hamburger-menu-light'}`} onClick={toggleMenu}>
           <FaBars />
         </div>
         <div className={`bm-overlay ${isOpen ? 'bm-overlay-open' : ''}`} onClick={closeMenu}></div>
@@ -53,10 +53,12 @@ function Header() {
           <Link to="/" onClick={closeMenu} className="bm-logo">
             <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="bm-logo-image" />
           </Link>
-          <Link to="/Video" onClick={closeMenu}>Video</Link>
-          <Link to="/Audio" onClick={closeMenu}>Audio</Link>
-          <Link to="/About" onClick={closeMenu}>About</Link>
-          <Link to="/Shop" onClick={closeMenu}>Shop</Link>
+          <div className="bm-item-list">
+            <Link to="/Video" onClick={closeMenu}>Video</Link>
+            <Link to="/Audio" onClick={closeMenu}>Audio</Link>
+            <Link to="/About" onClick={closeMenu}>About</Link>
+            <Link to="/Shop" onClick={closeMenu}>Shop</Link>
+          </div>
           <div className="bm-social-icons">
             <a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer"><FaSoundcloud /></a>
             <a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
