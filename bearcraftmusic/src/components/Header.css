@@ -46,7 +46,7 @@
 
 .light-bg {
   background-color: white;
-  color: #FFF;
+  color: black; /* Changed to black for light background */
 }
 
 .dark-bg .menu a {
@@ -54,7 +54,7 @@
 }
 
 .light-bg .menu a {
-  color: #FFF;
+  color: black; /* Changed to black for light background */
 }
 
 .header a {
@@ -87,7 +87,7 @@
 }
 
 .light-bg .social-icons a {
-  color: #F01f1f;
+  color: black; /* Changed to black for light background */
 }
 
 .light-bg .menu a:hover {
