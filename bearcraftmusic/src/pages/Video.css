@@ -1,12 +1,6 @@
-.video-page {
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust the minmax values for larger videos */
   gap: 20px;
 }
 
