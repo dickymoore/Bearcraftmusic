@@ -1,3 +1,5 @@
+// Footer.js
+
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 import './Footer.css';
@@ -6,16 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-section links-section">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Shop">Shop</a></li>
-            <li><a href="/Video">Video</a></li>
-          </ul>
-        </div>
         <div className="footer-section social-section">
-          <h3>Connect</h3>
           <ul className="social-icons">
             <li><a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer"><FaSoundcloud /></a></li>
             <li><a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
