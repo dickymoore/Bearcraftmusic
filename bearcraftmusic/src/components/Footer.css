@@ -30,8 +30,35 @@
 
 .subscribe-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Align items in a row by default */
   align-items: center;
+  justify-content: center;
+}
+
+.subscribe-section h2 {
+  margin-right: 10px; /* Add space between elements */
+}
+
+.subscribe-section input {
+  margin-right: 10px; /* Add space between elements */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: center;
+  }
+
+  .subscribe-section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .subscribe-section h2,
+  .subscribe-section input,
+  .subscribe-section .button {
+    margin: 5px 0; /* Add space between elements */
+  }
 }
 
 .footer-section h3 {
@@ -76,8 +103,9 @@
   font: 14px 'Poppins', Helvetica, Arial, sans-serif; /* Ensure consistent font */
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center align subscription form */
+  flex-direction: row; /* Align items in a row by default */
+  justify-content: center; /* Center align subscription form */
+  align-items: center; /* Align items to center */
 }
 
 #mc_embed_signup input[type="email"] {
