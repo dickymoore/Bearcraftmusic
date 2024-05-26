@@ -1,5 +1,17 @@
-/* src/App.css */
+/* App.css */
 .App {
-    text-align: center;
-  }
+  text-align: center;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header, nav, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
