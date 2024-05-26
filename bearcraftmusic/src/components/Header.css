@@ -1,4 +1,13 @@
-/* Header.css */
+:root {
+  --dark-bg-color: black;
+  --light-bg-color: white;
+  --text-color-light: black;
+  --text-color-dark: #FDF3EF;
+  --hover-bg-color: #f5f5f5;
+  --hover-text-color: #ccc;
+  --light-hover-bg-color: #f5f5f5;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,7 +17,7 @@
   margin: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 60px; /* Set a fixed height for the header */
+  height: 60px;
 }
 
 .logo {
@@ -40,21 +49,21 @@
 }
 
 .dark-bg {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-dark);
 }
 
 .light-bg {
-  background-color: white;
-  color: black; /* Changed to black for light background */
+  background-color: var(--light-bg-color);
+  color: var(--text-color-light);
 }
 
 .dark-bg .menu a {
-  color: #FDF3EF;
+  color: var(--text-color-dark);
 }
 
 .light-bg .menu a {
-  color: black; /* Changed to black for light background */
+  color: var(--text-color-light);
 }
 
 .header a {
@@ -63,8 +72,12 @@
 }
 
 .header a:hover {
-  background-color: #555;
+  background-color: var(--hover-bg-color);
   border-radius: 5px;
+}
+
+.light-bg .header a:hover {
+  background-color: var(--light-hover-bg-color);
 }
 
 .header .social-icons {
@@ -83,19 +96,19 @@
 }
 
 .dark-bg .social-icons a {
-  color: white;
+  color: var(--text-color-dark);
 }
 
 .light-bg .social-icons a {
-  color: black; /* Changed to black for light background */
+  color: var(--text-color-light);
 }
 
 .light-bg .menu a:hover {
-  color: #FDF3EF;
+  color: var(--hover-text-color);
 }
 
 .dark-bg .menu a:hover {
-  color: #ccc;
+  color: var(--hover-text-color);
 }
 
 .hamburger-menu {
@@ -103,11 +116,11 @@
 }
 
 .hamburger-menu-light {
-  color: black; /* Set color for light background */
+  color: var(--text-color-light);
 }
 
 .hamburger-menu-dark {
-  color: white; /* Set color for dark background */
+  color: var(--text-color-dark);
 }
 
 @media (max-width: 768px) {

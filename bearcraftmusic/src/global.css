@@ -1,7 +1,14 @@
+:root {
+  --primary-color: #007bff;
+  --bg-color: #fff;
+  --text-color: #333;
+  --font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
@@ -23,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #007bff;
+  color: var(--primary-color);
 }
 
 .content {
@@ -33,7 +40,7 @@ a:hover {
 }
 
 .home .home-content {
-  max-width: none; /* Ensure the content takes full width for the home page */
+  max-width: none;
   margin: 0;
   padding: 0;
 }

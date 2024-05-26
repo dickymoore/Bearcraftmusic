@@ -1,32 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
-import Video from './pages/Video';
-import Audio from './pages/Audio';
-import About from './pages/About';
-import Shop from './pages/Shop';
 import Footer from './components/Footer';
-import Font from './components/Font'; // Import the Font component
+import Font from './components/Font';
 import './App.css';
 
-function App() {
+const Home = lazy(() => import('./pages/Home'));
+const Video = lazy(() => import('./pages/Video'));
+const Audio = lazy(() => import('./pages/Audio'));
+const About = lazy(() => import('./pages/About'));
+const Shop = lazy(() => import('./pages/Shop'));
+
+const App = () => {
   useEffect(() => {
     console.log("App component rendered");
-  }, []); // Added empty dependency array to useEffect
+  }, []);
 
   return (
     <Router>
       <div className="App">
-        <Font /> {/* Render the Font component here */}
+        <Font />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Video" element={<Video />} />
-          <Route path="/Audio" element={<Audio />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Shop" element={<Shop />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Video" element={<Video />} />
+            <Route path="/Audio" element={<Audio />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Shop" element={<Shop />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </Router>
