@@ -4,10 +4,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column; /* Change to column to stack sections */
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'Poppins', sans-serif; /* Ensure consistent font */
 }
 
@@ -16,24 +14,24 @@
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 20px; /* Add margin to separate from copyright */
 }
 
 .footer-section {
   flex: 1;
   min-width: 200px;
-  margin-bottom: 20px;
 }
 
-.links-section {
-  order: 1;
-}
-
-.social-section {
-  order: 2;
+.links-section,
+.social-section,
+.subscribe-section {
+  text-align: center; /* Center align text in each section */
 }
 
 .subscribe-section {
-  order: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-section h3 {
@@ -56,7 +54,7 @@
 
 .footer .social-icons {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center; /* Center icons */
 }
 
 .footer .social-icons li {
@@ -77,12 +75,9 @@
   clear: left;
   font: 14px 'Poppins', Helvetica, Arial, sans-serif; /* Ensure consistent font */
   width: 100%;
-}
-
-#mc_embed_signup form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center; /* Center align subscription form */
 }
 
 #mc_embed_signup input[type="email"] {
@@ -109,12 +104,9 @@
 .footer-bottom {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
   background-color: #f0f0f0; /* Same as the footer background color */
   padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 20px; /* Ensure it stays at the bottom */
 }
 
 .footer a:hover {
