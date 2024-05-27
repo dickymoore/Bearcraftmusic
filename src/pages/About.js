@@ -5,7 +5,7 @@ function About() {
   return (
     <div className = "content">
       <div className="about">
-        <img src={`${process.env.PUBLIC_URL}/images/Dicky-22-eDIT.jpg`} alt="Dicky Moore" />
+        <img src={`${process.env.PUBLIC_URL}/images/Dicky-22-edit.jpg`} alt="Dicky Moore" />
         <div className="text-content">
           <h1>About Bearcraft</h1>
           <p>
