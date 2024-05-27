@@ -16,6 +16,7 @@ function Audio() {
                 frameBorder="0" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
+                title="Fabrefactions Spotify Album"
                 style={{border: 'none'}}
               ></iframe>
             </div>
@@ -49,6 +50,7 @@ function Audio() {
                 allowFullScreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
+                title="Yestreen Spotify Album"
               ></iframe>
             </div>
           </div>

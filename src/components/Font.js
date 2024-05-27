@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { googleFont } from '../config/constants';
 
 const Font = () => {
