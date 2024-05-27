@@ -1,5 +1,5 @@
 # Define the directory path of your site
-$directory = "C:\Users\dicky\repos\Bearcraftmusic\bearcraftmusic"
+$directory = Get-Location
 $directories = @("$($directory)\public", "$($directory)\src")
 
 # Initialize an empty string to store the concatenated contents
