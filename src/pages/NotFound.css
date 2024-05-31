@@ -1,0 +1,37 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .not-found-gif {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .not-found h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+  
+  .not-found p {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+  
+  .not-found a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+  }
+  
+  .not-found a:hover {
+    text-decoration: underline;
+  }
+  

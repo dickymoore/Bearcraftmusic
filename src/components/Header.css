@@ -48,21 +48,21 @@
   margin-left: 10px;
 }
 
-.dark-bg {
+.darkBackground {
   background-color: var(--dark-bg-color);
   color: var(--text-color-dark);
 }
 
-.light-bg {
+.lightBackground {
   background-color: var(--light-bg-color);
   color: var(--text-color-light);
 }
 
-.dark-bg .menu a {
+.darkBackground .menu a {
   color: var(--text-color-dark);
 }
 
-.light-bg .menu a {
+.lightBackground .menu a {
   color: var(--text-color-light);
 }
 
@@ -76,7 +76,7 @@
   border-radius: 5px;
 }
 
-.light-bg .header a:hover {
+.lightBackground .header a:hover {
   background-color: var(--light-hover-bg-color);
 }
 
@@ -95,19 +95,19 @@
   justify-content: center;
 }
 
-.dark-bg .social-icons a {
+.darkBackground .social-icons a {
   color: var(--text-color-dark);
 }
 
-.light-bg .social-icons a {
+.lightBackground .social-icons a {
   color: var(--text-color-light);
 }
 
-.light-bg .menu a:hover {
+.lightBackground .menu a:hover {
   color: var(--hover-text-color);
 }
 
-.dark-bg .menu a:hover {
+.darkBackground .menu a:hover {
   color: var(--hover-text-color);
 }
 

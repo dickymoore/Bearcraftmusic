@@ -1,3 +1,5 @@
+// App.js
+
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -10,6 +12,7 @@ const Home = React.lazy(() => import('./pages/Home'));
 const Video = React.lazy(() => import('./pages/Video'));
 const Audio = React.lazy(() => import('./pages/Audio'));
 const About = React.lazy(() => import('./pages/About'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App = () => {
   useEffect(() => {
@@ -58,6 +61,7 @@ const App = () => {
             <Route path="/Video" element={<Video />} />
             <Route path="/Audio" element={<Audio />} />
             <Route path="/About" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </React.Suspense>
         <Footer />
