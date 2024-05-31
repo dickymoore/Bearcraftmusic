@@ -1,3 +1,5 @@
+// Video.js
+
 import React from 'react';
 import './Video.css';
 
@@ -12,21 +14,19 @@ function Video() {
   ];
 
   return (
-    <div className="content">
-      <div className="video-page">
-        <div className="video-grid">
-          {videoLinks.map((link, index) => (
-            <div key={index} className="video-container-video">
-              <iframe 
-                src={link} 
-                title={`YouTube video player ${index}`} 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
-            </div>
-          ))}
-        </div>
+    <div className="video">
+      <div className="video-grid">
+        {videoLinks.map((link, index) => (
+          <div key={index} className="video-container-video">
+            <iframe 
+              src={link} 
+              title={`YouTube video player ${index}`} 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
       </div>
     </div>
   );

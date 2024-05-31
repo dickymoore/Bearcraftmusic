@@ -1,5 +1,4 @@
 // Header.js
-
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
@@ -9,12 +8,14 @@ import SocialIcons from './SocialIcons';
 
 const Header = () => {
   const location = useLocation();
-  const [isHomePage, setIsHomePage] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [headerClass, setHeaderClass] = useState('');
 
   useEffect(() => {
-    setIsHomePage(location.pathname === '/');
+    const path = location.pathname.slice(1) || 'home';
+    const lightBackgroundPaths = ['About', 'Audio', 'Video'];
+    setHeaderClass(lightBackgroundPaths.includes(path) ? 'lightBackground' : 'darkBackground');
   }, [location]);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -25,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isHomePage ? 'dark-bg' : 'light-bg'}`}>
+    <header className={`header ${headerClass}`}>
       <Link to="/" className="logo">
         <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" />
       </Link>
@@ -39,7 +40,7 @@ const Header = () => {
             <SocialIcons />
           </div>
         </ul>
-        <div className={`hamburger-menu ${isHomePage ? 'hamburger-menu-dark' : 'hamburger-menu-light'}`} onClick={toggleMenu}>
+        <div className={`hamburger-menu ${headerClass}`} onClick={toggleMenu}>
           <FaBars />
         </div>
         <div className={`bm-overlay ${isOpen ? 'bm-overlay-open' : ''}`} onClick={closeMenu}></div>

@@ -1,9 +1,11 @@
+// Audio.js
+
 import React from 'react';
 import './Audio.css';
 
 function Audio() {
   return (
-    <div className="audio-page">
+    <div className="audio">
       <div className="content">
         <div className="album-section">
           <div className="image-section">

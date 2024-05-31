@@ -1,3 +1,4 @@
+/* global.css */
 :root {
   --primary-color: #007bff;
   --bg-color: #fff;
@@ -43,4 +44,36 @@ a:hover {
   max-width: none;
   margin: 0;
   padding: 0;
+}
+
+
+/* global.css */
+:root {
+  --header-bg-color-home: black;
+  --header-bg-color-video: white;
+  --header-bg-color-audio: #f0f0f0;
+  --header-bg-color-about: #e0e0e0;
+  --header-bg-color-not-found: black;
+  --header-bg-color-default: white;
+}
+
+.header {
+  background-color: var(--header-bg-color-default);
+  transition: background-color 0.3s ease;
+}
+
+.header.home {
+  background-color: var(--header-bg-color-home);
+}
+.header.video {
+  background-color: var(--header-bg-color-video);
+}
+.header.audio {
+  background-color: var(--header-bg-color-audio);
+}
+.header.about {
+  background-color: var(--header-bg-color-about);
+}
+.header.not-found {
+  background-color: var(--header-bg-color-not-found);
 }
