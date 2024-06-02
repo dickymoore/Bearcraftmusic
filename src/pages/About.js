@@ -16,13 +16,13 @@ function About() {
           Over ten tracks, Fabrefactions moves upriver along the Thames, from Margate, through Leigh-on-Sea and into the capital of England. That journey is mapped out in gorgeous organic electronics, overheard ghost stories and half-remembered urban myths. Here are tales of runaways, banshees, estuary witches, acid trips and seafront car-cruising, set to sounds that evoke bankside industry, underground dancehalls and the ambient push and pull of the shoreline.
         </p>
         <p>
-          Bearcraft is a collective led by Dicky Moore. Dicky is one quarter of Dream Themes, was guitarist for Frank Sidebottom’s Oh Blimey Big Band and plays for Scritti Politti.
+          Bearcraft is a collective led by Dicky Moore. Dicky is one quarter of Dream Themes, was guitarist for Frank Sidebottom’s Oh Blimey Big Band, and plays for Scritti Politti.
         </p>
         <p>
           Fabrefactions was written whilst staring out the window of a council flat in Dalston after a diagnosis of acute hearing loss; recorded in the corner of an artist’s studio in London Fields before being mixed next to the motorway in Bristol (over a period of ten years). Fabrefactions was recorded with Joe Reeves (Shit Disco, Age of Consent) and mixed by Ali Chant (Gruff Rhys, PJ Harvey, This Is The Kit); all music played and programmed by Dicky Moore. All vocals by Dicky and artist/musician Sam Sally.
         </p>
         <p>
-          Fabrefactions is the follow up to 2010’s Yestreen:
+          Fabrefactions is the follow-up to 2010’s Yestreen:
         </p>
         <blockquote>
           <p>“So many hooks that you instantly stop everything you are doing and prepare for the onslaught of brilliant electro”</p>
@@ -36,6 +36,9 @@ function About() {
           <p>“Infinity catchy… Cure-like… a fully realised and strangely satisfying pop record. Impressive.”</p>
           <b>The Digital Fix</b>
         </blockquote>
+        <p>
+          Bearcraft has garnered notable support from tastemakers and media outlets such as Electronic Sound, Bearded Magazine, and 6 Music. Their unique blend of spectral synths, electro beats, and thematic storytelling has resonated widely, drawing comparisons to acts like The Knife, Depeche Mode, and Austra.
+        </p>
       </div>
     </div>
   );

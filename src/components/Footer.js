@@ -1,21 +1,25 @@
-// Footer.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
-    <footer className="footer">
+    <footer className="footer" aria-label="Footer">
       <div className="footer-content">
         <div className="footer-section social-section">
           <ul className="social-icons">
-            <li><a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer"><FaSoundcloud /></a></li>
-            <li><a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
-            <li><a href="https://twitter.com/bearcraftmusic" target="_blank" rel="noopener noreferrer"><FaTwitter /></a></li>
-            <li><a href="https://www.instagram.com/bearcraftmusic/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
-            <li><a href="https://www.youtube.com/user/Bearcraftmusic" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
-            <li><a href="https://open.spotify.com/artist/63VxrRwKAytSfmlhI7SwN1" target="_blank" rel="noopener noreferrer"><FaSpotify /></a></li>
+            <li><a href="https://soundcloud.com/bearcraft" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on SoundCloud"><FaSoundcloud /></a></li>
+            <li><a href="https://www.facebook.com/Bearcraft/" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on Facebook"><FaFacebookF /></a></li>
+            <li><a href="https://twitter.com/bearcraftmusic" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on Twitter"><FaTwitter /></a></li>
+            <li><a href="https://www.instagram.com/bearcraftmusic/" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on Instagram"><FaInstagram /></a></li>
+            <li><a href="https://www.youtube.com/user/Bearcraftmusic" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on YouTube"><FaYoutube /></a></li>
+            <li><a href="https://open.spotify.com/artist/63VxrRwKAytSfmlhI7SwN1" target="_blank" rel="noopener noreferrer" aria-label="Bearcraft on Spotify"><FaSpotify /></a></li>
           </ul>
         </div>
         <div className="footer-section subscribe-section">
@@ -24,7 +28,18 @@ const Footer = () => {
               <div id="mc_embed_signup_scroll">
                 <h2>Subscribe</h2>
                 <div className="mc-field-group">
-                  <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email address" required />
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    className="required email"
+                    id="mce-EMAIL"
+                    placeholder="Email address"
+                    required
+                    value={email}
+                    onChange={handleEmailChange}
+                    autoComplete="email"
+                    aria-label="Email address"
+                  />
                 </div>
                 <div id="mce-responses" className="clear foot">
                   <div className="response" id="mce-error-response" style={{display: "none"}}></div>

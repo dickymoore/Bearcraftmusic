@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header className={`header ${headerClass}`}>
       <Link to="/" className="logo">
-        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="logo-image" />
+        <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft Logo" className="logo-image" />
       </Link>
       <nav>
         <ul className="menu">
@@ -40,13 +40,13 @@ const Header = () => {
             <SocialIcons />
           </div>
         </ul>
-        <div className={`hamburger-menu ${headerClass}`} onClick={toggleMenu}>
+        <button className={`hamburger-menu ${headerClass}`} onClick={toggleMenu} aria-label="Menu">
           <FaBars />
-        </div>
+        </button>
         <div className={`bm-overlay ${isOpen ? 'bm-overlay-open' : ''}`} onClick={closeMenu}></div>
         <div className={`bm-menu ${isOpen ? 'bm-menu-open' : ''}`}>
           <Link to="/" onClick={closeMenu} className="bm-logo">
-            <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft" className="bm-logo-image" />
+            <img src="/images/BearcraftWebLogo20ptFDF3EF.png" alt="Bearcraft Logo" className="bm-logo-image" />
           </Link>
           <div className="bm-item-list">
             <Link to="/Video" onClick={closeMenu}>Video</Link>

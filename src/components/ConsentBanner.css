@@ -1,0 +1,42 @@
+/* ConsentBanner.css */
+
+.consent-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .consent-banner p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .consent-banner a {
+    color: #4CAF50;
+    text-decoration: underline;
+  }
+  
+  .consent-buttons {
+    margin-top: 10px;
+  }
+  
+  .consent-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .consent-buttons button:hover {
+    background-color: #45a049;
+  }
+  

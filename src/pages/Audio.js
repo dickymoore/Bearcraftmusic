@@ -1,5 +1,3 @@
-// Audio.js
-
 import React from 'react';
 import './Audio.css';
 
@@ -18,7 +16,7 @@ function Audio() {
                 frameBorder="0" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
-                title="Fabrefactions Spotify Album"
+                title="Fabrefactions Spotify Album | Electronic Synth-Pop Music from England, UK" 
                 style={{border: 'none'}}
               ></iframe>
             </div>
@@ -29,7 +27,7 @@ function Audio() {
               Fabrefactions is Essex born musician/producer Dicky Moore aka Bearcraft’s lead protagonist's second album following his debut Yestreen. Over the album’s ten tracks, Fabrefactions moves upriver along the Thames, from Margate, through Leigh-on-Sea and into the capital of England. That journey is mapped out in gorgeous organic electronics, in overheard ghost stories and half-remembered urban myths. Here are tales of runaways and banshees, estuary witches, acid trips and seafront car-cruising, set to sounds that evoke everything from bankside industry to underground dancehalls and the ambient push and pull of the shoreline.
             </p>
             <p>
-              Fabrefactions has caught the attention of online tastemakers like High Clouds, Cool Hunting, Analogue Trash, Skope, and When The Horn Blows. Further support for Bearcraft has come from Electronic Sound, Bearded Magazine and 6 Music. For fans of The Knife, Depeche Mode and Austra.
+              Fabrefactions has caught the attention of online tastemakers like High Clouds, Cool Hunting, Analogue Trash, Skope, and When The Horn Blows. Further support for Bearcraft has come from Electronic Sound, Bearded Magazine, and 6 Music. For fans of The Knife, Depeche Mode, and Austra.
             </p>
             <blockquote>“Infinity catchy… Cure-like… a fully realised and strangely satisfying pop record. Impressive.” <b>The Digital Fix</b></blockquote>
             <blockquote>“So many hooks that you instantly stop everything you are doing and prepare for the onslaught of brilliant electro” <b>The 405</b></blockquote>
@@ -52,7 +50,7 @@ function Audio() {
                 allowFullScreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
-                title="Yestreen Spotify Album"
+                title="Yestreen Spotify Album | Indie Synth-Pop Music from England, UK" 
               ></iframe>
             </div>
           </div>

@@ -20,7 +20,7 @@ function Video() {
           <div key={index} className="video-container-video">
             <iframe 
               src={link} 
-              title={`YouTube video player ${index}`} 
+              title={`Bearcraft Music Videos ${index + 1}`} 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
