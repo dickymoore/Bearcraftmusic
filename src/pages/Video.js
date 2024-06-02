@@ -6,11 +6,14 @@ import './Video.css';
 function Video() {
   const videoLinks = [
     "https://www.youtube.com/embed/eUpxFOJpD4k",
-    "https://www.youtube.com/embed/pMqEHrnux3k",
     "https://www.youtube.com/embed/trl3Hn4LfTo",
+    "https://www.youtube.com/embed/pMqEHrnux3k",
+    "https://www.youtube.com/embed/1dfTy55j1A0",
+    "https://www.youtube.com/embed/HaTetVPpGvI",
     "https://www.youtube.com/embed/8vawrS8QMuA",
+    "https://www.youtube.com/embed/aUmo9gXerOc",
+    "https://www.youtube.com/embed/PGTe_1ptIC4",
     "https://www.youtube.com/embed/mFnz0Y2xVwE",
-    "https://www.youtube.com/embed/aUmo9gXerOc"
   ];
 
   return (

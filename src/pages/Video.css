@@ -1,11 +1,13 @@
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax values to better suit your layout */
   gap: 20px;
+  justify-content: center; /* Center the grid */
+  max-width: 1200px; /* Set a max-width to control the width */
+  margin: 0 auto; /* Center the grid container */
 }
 
 .video-container-video {
-  width: 100%;
   aspect-ratio: 16 / 9;
   background-color: #000;
   border-radius: 10px;
