@@ -1,4 +1,4 @@
-// ConsentBanner.js
+// src/components/ConsentBanner.js
 
 import React, { useState, useEffect } from 'react';
 import './ConsentBanner.css';
