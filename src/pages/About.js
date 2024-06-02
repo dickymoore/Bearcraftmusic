@@ -36,6 +36,9 @@ function About() {
           <p>“Infinity catchy… Cure-like… a fully realised and strangely satisfying pop record. Impressive.”</p>
           <b>The Digital Fix</b>
         </blockquote>
+        <p>
+          For fans of The Knife, Depeche Mode, and Austra, Bearcraft offers a unique blend of electronic synth-pop and dark wave music. Our journey is mapped out in gorgeous organic electronics, overheard ghost stories, and half-remembered urban myths, set to sounds that evoke bankside industry, underground dancehalls, and the ambient push and pull of the shoreline.
+        </p>
       </div>
     </div>
   );

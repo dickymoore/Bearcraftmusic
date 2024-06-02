@@ -1,5 +1,3 @@
-// Audio.js
-
 import React from 'react';
 import './Audio.css';
 
@@ -18,7 +16,7 @@ function Audio() {
                 frameBorder="0" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
-                title="Fabrefactions Spotify Album"
+                title="Fabrefactions Spotify Album | Electronic Synth-Pop Music from England, UK" 
                 style={{border: 'none'}}
               ></iframe>
             </div>
@@ -52,7 +50,7 @@ function Audio() {
                 allowFullScreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
-                title="Yestreen Spotify Album"
+                title="Yestreen Spotify Album | Indie Synth-Pop Music from England, UK" 
               ></iframe>
             </div>
           </div>
