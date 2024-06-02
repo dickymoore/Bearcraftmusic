@@ -1,10 +1,14 @@
-// Footer.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSoundcloud, FaSpotify } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -24,7 +28,17 @@ const Footer = () => {
               <div id="mc_embed_signup_scroll">
                 <h2>Subscribe</h2>
                 <div className="mc-field-group">
-                  <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" placeholder="Email address" required />
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    className="required email"
+                    id="mce-EMAIL"
+                    placeholder="Email address"
+                    required
+                    value={email}
+                    onChange={handleEmailChange}
+                    autocomplete="email"
+                  />
                 </div>
                 <div id="mce-responses" className="clear foot">
                   <div className="response" id="mce-error-response" style={{display: "none"}}></div>
